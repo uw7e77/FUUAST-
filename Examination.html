@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinations - Federal Urdu University</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/examination.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <!-- Top Navigation -->
+  <!-- Header & Navigation -->
+     <header class="header" id="header">
+         <!-- Secondary Navigation -->
+    <div class="subnav" aria-label="Secondary navigation">
+        <div class="container">
+            <ul class="subnav-menu">
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Journals</a></li>
+                <li><a href="#">SCHOLARSHIP</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Placement Bureau</a></li>
+                 
+                <li class="subnav-search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search here..." class="search-input" aria-label="Search">
+                        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="auth.html" class="login-btn">Log in ↗</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>FUUAST</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </label>
+
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="undergraduate.html">Programs <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="undergraduate.html">Undergraduate</a></li>
+                                <li><a href="graduate.html">Graduate</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#">Admission <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="application-form.html">Apply Now</a></li>
+                                <li><a href="MeritLists.aspx">Merit Lists</a></li>
+                            </ul>
+                        </li>
+                  
+                        
+                        
+                        <!-- Faculties Dropdown -->
+                        <li class="dropdown">
+                            <a href="#">Faculties <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Arts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="English.aspx">Department of English</a></li>
+                                        <li><a class="dropdown-item" href="InternationalRelations.aspx">Department of International Relations</a></li>
+                                        <li><a class="dropdown-item" href="MassCommunication.aspx">Department of Mass Communication</a></li>
+                                        <li><a class="dropdown-item" href="Urdu.aspx">Department of Urdu</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Business Administration, Commerce &amp; Economics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="BusinessAdministration.aspx">Department of Business Administration</a></li>
+                                        <li><a class="dropdown-item" href="CommerceMain.aspx">Department of Commerce</a></li>
+                                        <li><a class="dropdown-item" href="EconomicsMain.aspx">Department of Economics</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Engineering <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="EE.aspx">Department of Electrical Engineering</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Ma'arif-e-Islamia <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="Islamiat.aspx">Department of Islamic Studies</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Science &amp; Technology <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="AppliedPhysics.aspx">Department of Physics</a></li>
+                                        <li><a class="dropdown-item" href="ComputerScience.aspx">Department of Computer Science</a></li>
+                                        <li><a class="dropdown-item" href="Mathematics.aspx">Department of Mathematics</a></li>
+                                        <li><a class="dropdown-item" href="SofwareEngineering.aspx">Department of Sofware Engineering</a></li>
+                                        <li><a class="dropdown-item" href="Statistics.aspx">Department of Statistics</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Students <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.digitallibrary.edu.pk/fuuast.html" target="_blank" rel="noopener noreferrer">Digital Library</a></li>
+                                <li class="has-submenu">
+                                    <a href="#">Examination <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="Examination.html">Examination</a></li>
+                                        <li><a href="DegreeClearance.aspx">Degree Clearance</a></li>
+                                        <li><a href="Results.aspx">Results</a></li>
+                                        <li><a href="StatusReports.aspx">Status Reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="LaptopScheme.aspx">Laptop Scheme</a></li>
+                                <li><a href="Oric.aspx">ORIC</a></li>
+                                <li><a href="StudentCard.aspx">University Card</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+
+                         
+                         
+                         <!-- Administration Dropdown -->
+                         <li class="dropdown">
+                            <a href="#">Administration <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Accounts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="FeeDetails.aspx">Fee Section</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">Academics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="AdMissionMain.aspx">Admission Department</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">IT Department <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">IT Cell</a></li>
+                                        <li><a href="#">MIS Cell</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="#">Planning & Development</a></li>
+                                <li><a href="https://fuuastisb.edu.pk/QEC.aspx">QEC</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Store & Purchase</a></li>
+                                <li><a href="Forms/BusesRoutes_Fall2025.pdf">Transport Section</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="index.html#about">About <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about">About FUUAST</a></li>
+                                <li><a href="index.html#vision">Vision & Mission</a></li>
+                                <li><a href="index.html#leadership">Leadership</a></li>
+                                <li><a href="index.html#history">History</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                  
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Introduction -->
+        <section class="intro-section">
+            <h2>About Examinations Department</h2>
+            <p>The Examinations Department is one of the most important pillars of the University. The Examinations Department of the FUUAST is dedicated to ensure the smooth and efficient administration of all academic assessments, conduct of examinations, issuance of results, semester result cards, transcripts, provisional certificates, degrees, preparation of convocation activities etc.</p>
+            
+            <p>The Examinations department of the FUUAST is headed by the Controller of Examinations, and is responsible for all allied matters of Examinations. The University has running two semesters in a calendar year and the duration of each semester is 18 weeks.</p>
+
+            <div class="highlight-box">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">📌 Important Requirements</h3>
+                <ul>
+                    <li><strong>75% attendance is mandatory</strong> to appear in Final-term examinations</li>
+                    <li>The department maintains strict rules and regulations for versatile student development</li>
+                    <li>Two semesters run annually with 18-week duration each</li>
+                    <li>All promotional and grading criteria must be met for progression</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('bs-programs')">BS Programs</button>
+            <button class="tab-button" onclick="switchTab('bs-electrical')">BS Electrical Engineering</button>
+            <button class="tab-button" onclick="switchTab('masters')">Masters Programs</button>
+            <button class="tab-button" onclick="switchTab('ms-mphil')">MS/M.Phil./Ph.D.</button>
+        </div>
+
+        <!-- BS Programs Tab -->
+        <div id="bs-programs" class="tab-content active">
+            <div class="table-container">
+                <h3>🎓 Promotional Criteria for BS Programmes (except Electrical Engineering)</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-light);">Effective from Spring 2012</p>
+                
+                <ul class="criteria-list">
+                    <li class="criteria-item">
+                        <strong>1st to 2nd Semester:</strong>
+                        No criterion for promotion
+                    </li>
+                    <li class="criteria-item">
+                        <strong>2nd to 3rd Semester:</strong>
+                        80% courses must be passed along with minimum 1.50 CGPA
+                    </li>
+                    <li class="criteria-item">
+                        <strong>3rd to 4th Semester:</strong>
+                        Minimum 1.80 CGPA is required
+                    </li>
+                    <li class="criteria-item">
+                        <strong>4th to 5th Semester:</strong>
+                        100% courses of 1st and 2nd semester + 80% of 3rd and 4th semester courses must be passed along with 2.00 CGPA
+                    </li>
+                    <li class="criteria-item">
+                        <strong>5th to 6th Semester:</strong>
+                        Minimum 2.20 CGPA is required
+                    </li>
+                    <li class="criteria-item">
+                        <strong>6th to 7th Semester:</strong>
+                        100% courses of 1st to 4th semester + 80% courses of 5th and 6th semester must be passed along with minimum 2.20 CGPA
+                    </li>
+                    <li class="criteria-item">
+                        <strong>7th to 8th Semester:</strong>
+                        Minimum 2.20 CGPA is required
+                    </li>
+                    <li class="criteria-item">
+                        <strong>Degree Qualification:</strong>
+                        All courses must be passed along with 2.50 CGPA
+                    </li>
+                </ul>
+            </div>
+
+            <div class="table-container">
+                <h3>📊 Grading Criteria for BS Programmes</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-light);">Effective from Spring 2012 (except Electrical Engineering)</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr #</th>
+                            <th>Marks (%age)</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>80-100</td>
+                            <td class="grade-a">A</td>
+                            <td><strong>4.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>75-79</td>
+                            <td class="grade-b">B+</td>
+                            <td><strong>3.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>70-74</td>
+                            <td class="grade-b">B</td>
+                            <td><strong>3.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>65-69</td>
+                            <td class="grade-c">C+</td>
+                            <td><strong>2.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>55-64</td>
+                            <td class="grade-c">C</td>
+                            <td><strong>2.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>50-54</td>
+                            <td class="grade-d">D</td>
+                            <td><strong>1.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Below 50</td>
+                            <td class="grade-f">F</td>
+                            <td><strong>0.0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- BS Electrical Engineering Tab -->
+        <div id="bs-electrical" class="tab-content">
+            <div class="table-container">
+                <h3>⚡ Promotional Criteria for B.Sc. Electrical Engineering</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-light);">Effective from Autumn 2016</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Academic Probation Policy:</strong></p>
+                    <p>A student who fails to obtain a minimum GPA of <strong>1.5</strong> at the end of 1st semester shall be placed on academic probation for the 2nd semester being academically deficient.</p>
+                    <p style="margin-top: 1rem;"><strong>Academic Dismissal:</strong></p>
+                    <p>In case the student fails to improve CGPA to <strong>2.00</strong> at the end of 2nd semester, their name shall be removed from the Rolls of the University. Students dismissed on academic grounds shall receive an official transcript indicating courses completed along with grades earned.</p>
+                    <p style="margin-top: 1rem; color: var(--secondary-color); font-weight: 600;">⚠️ No special approval from competent authority should be entertained to cancel out the academic dismissal.</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3>📊 Grading Criteria for B.Sc. Electrical Engineering</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-light);">Effective from Autumn 2016 - Detailed Grade Scale</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr #</th>
+                            <th>Marks (%age)</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>90-100</td><td class="grade-a">A+</td><td><strong>4.00</strong></td></tr>
+                        <tr><td>2</td><td>89</td><td class="grade-a">A</td><td><strong>3.95</strong></td></tr>
+                        <tr><td>3</td><td>88</td><td class="grade-a">A</td><td><strong>3.90</strong></td></tr>
+                        <tr><td>4</td><td>87</td><td class="grade-a">A</td><td><strong>3.85</strong></td></tr>
+                        <tr><td>5</td><td>86</td><td class="grade-a">A</td><td><strong>3.80</strong></td></tr>
+                        <tr><td>6</td><td>85</td><td class="grade-a">A</td><td><strong>3.75</strong></td></tr>
+                        <tr><td>7</td><td>84</td><td class="grade-a">A-</td><td><strong>3.70</strong></td></tr>
+                        <tr><td>8</td><td>83</td><td class="grade-a">A-</td><td><strong>3.65</strong></td></tr>
+                        <tr><td>9</td><td>82</td><td class="grade-a">A-</td><td><strong>3.60</strong></td></tr>
+                        <tr><td>10</td><td>81</td><td class="grade-a">A-</td><td><strong>3.55</strong></td></tr>
+                        <tr><td>11</td><td>80</td><td class="grade-a">A-</td><td><strong>3.50</strong></td></tr>
+                        <tr><td>12</td><td>79</td><td class="grade-b">B+</td><td><strong>3.45</strong></td></tr>
+                        <tr><td>13</td><td>78</td><td class="grade-b">B+</td><td><strong>3.40</strong></td></tr>
+                        <tr><td>14</td><td>77</td><td class="grade-b">B+</td><td><strong>3.35</strong></td></tr>
+                        <tr><td>15</td><td>76</td><td class="grade-b">B+</td><td><strong>3.30</strong></td></tr>
+                        <tr><td>16</td><td>75</td><td class="grade-b">B+</td><td><strong>3.25</strong></td></tr>
+                        <tr><td>17</td><td>74</td><td class="grade-b">B</td><td><strong>3.20</strong></td></tr>
+                        <tr><td>18</td><td>73</td><td class="grade-b">B</td><td><strong>3.15</strong></td></tr>
+                        <tr><td>19</td><td>72</td><td class="grade-b">B</td><td><strong>3.10</strong></td></tr>
+                        <tr><td>20</td><td>71</td><td class="grade-b">B</td><td><strong>3.05</strong></td></tr>
+                        <tr><td>21</td><td>70</td><td class="grade-b">B</td><td><strong>3.00</strong></td></tr>
+                        <tr><td>22</td><td>69</td><td class="grade-b">B-</td><td><strong>2.95</strong></td></tr>
+                        <tr><td>23</td><td>68</td><td class="grade-b">B-</td><td><strong>2.90</strong></td></tr>
+                        <tr><td>24</td><td>67</td><td class="grade-b">B-</td><td><strong>2.85</strong></td></tr>
+                        <tr><td>25</td><td>66</td><td class="grade-b">B-</td><td><strong>2.80</strong></td></tr>
+                        <tr><td>26</td><td>65</td><td class="grade-b">B-</td><td><strong>2.75</strong></td></tr>
+                        <tr><td>27</td><td>64</td><td class="grade-c">C</td><td><strong>2.70</strong></td></tr>
+                        <tr><td>28</td><td>63</td><td class="grade-c">C</td><td><strong>2.65</strong></td></tr>
+                        <tr><td>29</td><td>62</td><td class="grade-c">C</td><td><strong>2.60</strong></td></tr>
+                        <tr><td>30</td><td>61</td><td class="grade-c">C</td><td><strong>2.55</strong></td></tr>
+                        <tr><td>31</td><td>60</td><td class="grade-c">C</td><td><strong>2.50</strong></td></tr>
+                        <tr><td>32</td><td>59</td><td class="grade-c">C-</td><td><strong>2.45</strong></td></tr>
+                        <tr><td>33</td><td>58</td><td class="grade-c">C-</td><td><strong>2.40</strong></td></tr>
+                        <tr><td>34</td><td>57</td><td class="grade-c">C-</td><td><strong>2.35</strong></td></tr>
+                        <tr><td>35</td><td>56</td><td class="grade-c">C-</td><td><strong>2.30</strong></td></tr>
+                        <tr><td>36</td><td>55</td><td class="grade-c">C-</td><td><strong>2.25</strong></td></tr>
+                        <tr><td>37</td><td>54</td><td class="grade-d">D</td><td><strong>2.20</strong></td></tr>
+                        <tr><td>38</td><td>53</td><td class="grade-d">D</td><td><strong>2.15</strong></td></tr>
+                        <tr><td>39</td><td>52</td><td class="grade-d">D</td><td><strong>2.10</strong></td></tr>
+                        <tr><td>40</td><td>51</td><td class="grade-d">D</td><td><strong>2.05</strong></td></tr>
+                        <tr><td>41</td><td>50</td><td class="grade-d">D</td><td><strong>2.00</strong></td></tr>
+                        <tr><td>42</td><td>0-49</td><td class="grade-f">F</td><td><strong>0.0</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Masters Programs Tab -->
+        <div id="masters" class="tab-content">
+            <div class="table-container">
+                <h3>🎓 Promotional Criteria for Masters Programs</h3>
+                
+                <ul class="criteria-list">
+                    <li class="criteria-item">
+                        <strong>1st to 2nd Semester:</strong>
+                        No criterion for promotion
+                    </li>
+                    <li class="criteria-item">
+                        <strong>2nd to 3rd Semester:</strong>
+                        Passing of 80% courses of 1st and 2nd semester along with minimum 2.00 CGPA
+                    </li>
+                    <li class="criteria-item">
+                        <strong>3rd to 4th Semester:</strong>
+                        Minimum 2.20 CGPA is required
+                    </li>
+                    <li class="criteria-item">
+                        <strong>Degree Qualification:</strong>
+                        All courses must be passed along with 2.50 CGPA
+                    </li>
+                </ul>
+            </div>
+
+            <div class="table-container">
+                <h3>📊 Grading Criteria for Masters (16 Years) Programmes</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr #</th>
+                            <th>Marks (%age)</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>90-100</td>
+                            <td class="grade-a">A+</td>
+                            <td><strong>4.0</strong> <span class="info-badge">Distinction</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>80-100</td>
+                            <td class="grade-a">A</td>
+                            <td><strong>4.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>75-79</td>
+                            <td class="grade-b">B+</td>
+                            <td><strong>3.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>70-74</td>
+                            <td class="grade-b">B</td>
+                            <td><strong>3.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>65-69</td>
+                            <td class="grade-c">C+</td>
+                            <td><strong>2.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>55-64</td>
+                            <td class="grade-c">C</td>
+                            <td><strong>2.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>50-54</td>
+                            <td class="grade-d">D</td>
+                            <td><strong>1.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Below 50</td>
+                            <td class="grade-f">F</td>
+                            <td><strong>0.0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- MS/M.Phil./Ph.D. Tab -->
+        <div id="ms-mphil" class="tab-content">
+            <div class="table-container">
+                <h3>🎓 Promotional Criteria for MS/M.Phil. and Ph.D. Programmes</h3>
+                
+                <ul class="criteria-list">
+                    <li class="criteria-item">
+                        <strong>1st to 2nd Semester:</strong>
+                        No criterion for promotion
+                    </li>
+                    <li class="criteria-item">
+                        <strong>2nd to 3rd Semester:</strong>
+                        Passing of 80% courses of 1st and 2nd semester along with minimum 2.00 CGPA
+                    </li>
+                    <li class="criteria-item">
+                        <strong>3rd to 4th Semester:</strong>
+                        Minimum 2.20 CGPA is required
+                    </li>
+                    <li class="criteria-item">
+                        <strong>Degree Qualification (MS/M.Phil.):</strong>
+                        All courses must be passed along with 2.50 CGPA
+                    </li>
+                    <li class="criteria-item">
+                        <strong>Degree Qualification (Ph.D.):</strong>
+                        All courses must be passed along with <strong>3.00 CGPA</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="table-container">
+                <h3>📊 Grading Criteria for MS, M.Phil. and Ph.D.</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-light);">Except Electrical Engineering, Economics and Applied Physics</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr #</th>
+                            <th>Marks (%age)</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>80-100</td>
+                            <td class="grade-a">A</td>
+                            <td><strong>4.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>70-79</td>
+                            <td class="grade-b">B</td>
+                            <td><strong>3.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>60-69</td>
+                            <td class="grade-c">C</td>
+                            <td><strong>2.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Below 60</td>
+                            <td class="grade-f">F</td>
+                            <td><strong>0.0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h3>📊 Grading for M.Phil. and Ph.D. (Economics & Applied Physics)</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr #</th>
+                            <th>Marks (%age)</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>90-100</td>
+                            <td class="grade-a">A+</td>
+                            <td><strong>4.0</strong> <span class="info-badge">Distinction</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>80-89</td>
+                            <td class="grade-a">A</td>
+                            <td><strong>4.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>70-79</td>
+                            <td class="grade-b">B+</td>
+                            <td><strong>3.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>60-69</td>
+                            <td class="grade-b">B</td>
+                            <td><strong>3.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>55-59</td>
+                            <td class="grade-c">C+</td>
+                            <td><strong>2.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>50-54</td>
+                            <td class="grade-c">C</td>
+                            <td><strong>2.0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Below 50</td>
+                            <td class="grade-f">F</td>
+                            <td><strong>0.0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">FUUAST</h3>
+                        <p class="footer-description">Federal Urdu University of Arts, Sciences & Technology - The first university in Pakistan using Urdu as the main language of instruction.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">About FUUAST</a></li>
+                            <li><a href="#programs">Academic Programs</a></li>
+                            <li><a href="#admissions">Admissions</a></li>
+                            <li><a href="#research">Research</a></li>
+                            <li><a href="#campus">Campus Life</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#library">Library</a></li>
+                            <li><a href="StudentPortal/student-portal.html">Student Portal</a></li>
+                            <li><a href="#lms">Learning Management System</a></li>
+                            <li><a href="#scholarships">Scholarships</a></li>
+                            <li><a href="#events">Events Calendar</a></li>
+                            <li><a href="#downloads">Downloads</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Contact Us</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Constitution Avenue, Islamabad, Pakistan</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+92-51-9262381-5</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>info@fuuast.edu.pk</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 FUUAST. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#sitemap">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Tab switching functionality
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById(tabId).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Scroll to tabs section smoothly
+            document.querySelector('.tabs').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.table-container, .intro-section, .criteria-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+  
+</body>
+</html>

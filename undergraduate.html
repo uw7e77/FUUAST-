@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undergraduate Programs - FUUAST</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/undergraduate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+   <!-- Header & Navigation -->
+     <header class="header" id="header">
+         <!-- Secondary Navigation -->
+    <div class="subnav" aria-label="Secondary navigation">
+        <div class="container">
+            <ul class="subnav-menu">
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Journals</a></li>
+                <li><a href="#">SCHOLARSHIP</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Placement Bureau</a></li>
+                 
+                <li class="subnav-search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search here..." class="search-input" aria-label="Search">
+                        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="auth.html" class="login-btn">Log in ↗</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>FUUAST</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </label>
+
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="undergraduate.html">Programs <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="undergraduate.html">Undergraduate</a></li>
+                                <li><a href="graduate.html">Graduate</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#">Admission <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="application-form.html">Apply Now</a></li>
+                                <li><a href="MeritLists.aspx">Merit Lists</a></li>
+                            </ul>
+                        </li>
+                  
+                        
+                        
+                        <!-- Faculties Dropdown -->
+                        <li class="dropdown">
+                            <a href="#">Faculties <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Arts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="English.aspx">Department of English</a></li>
+                                        <li><a class="dropdown-item" href="InternationalRelations.aspx">Department of International Relations</a></li>
+                                        <li><a class="dropdown-item" href="MassCommunication.aspx">Department of Mass Communication</a></li>
+                                        <li><a class="dropdown-item" href="Urdu.aspx">Department of Urdu</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Business Administration, Commerce &amp; Economics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="BusinessAdministration.aspx">Department of Business Administration</a></li>
+                                        <li><a class="dropdown-item" href="CommerceMain.aspx">Department of Commerce</a></li>
+                                        <li><a class="dropdown-item" href="EconomicsMain.aspx">Department of Economics</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Engineering <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="EE.aspx">Department of Electrical Engineering</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Ma'arif-e-Islamia <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="Islamiat.aspx">Department of Islamic Studies</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Science &amp; Technology <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="AppliedPhysics.aspx">Department of Physics</a></li>
+                                        <li><a class="dropdown-item" href="ComputerScience.aspx">Department of Computer Science</a></li>
+                                        <li><a class="dropdown-item" href="Mathematics.aspx">Department of Mathematics</a></li>
+                                        <li><a class="dropdown-item" href="SofwareEngineering.aspx">Department of Sofware Engineering</a></li>
+                                        <li><a class="dropdown-item" href="Statistics.aspx">Department of Statistics</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Students <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.digitallibrary.edu.pk/fuuast.html" target="_blank" rel="noopener noreferrer">Digital Library</a></li>
+                                <li class="has-submenu">
+                                    <a href="#">Examination <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="Examination.html">Examination</a></li>
+                                        <li><a href="DegreeClearance.aspx">Degree Clearance</a></li>
+                                        <li><a href="Results.aspx">Results</a></li>
+                                        <li><a href="StatusReports.aspx">Status Reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="LaptopScheme.aspx">Laptop Scheme</a></li>
+                                <li><a href="Oric.aspx">ORIC</a></li>
+                                <li><a href="StudentCard.aspx">University Card</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+
+                         
+                         
+                         <!-- Administration Dropdown -->
+                         <li class="dropdown">
+                            <a href="#">Administration <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Accounts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="FeeDetails.aspx">Fee Section</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">Academics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="AdMissionMain.aspx">Admission Department</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">IT Department <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">IT Cell</a></li>
+                                        <li><a href="#">MIS Cell</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="#">Planning & Development</a></li>
+                                <li><a href="https://fuuastisb.edu.pk/QEC.aspx">QEC</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Store & Purchase</a></li>
+                                <li><a href="Forms/BusesRoutes_Fall2025.pdf">Transport Section</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="index.html#about">About <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about">About FUUAST</a></li>
+                                <li><a href="index.html#vision">Vision & Mission</a></li>
+                                <li><a href="index.html#leadership">Leadership</a></li>
+                                <li><a href="index.html#history">History</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                  
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="section-padding bg-light" id="undergraduate">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h1 class="section-title" data-aos="fade-up">Undergraduate Programs</h1>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                        Discover our comprehensive undergraduate programs designed to prepare you for success in your chosen field.
+                    </p>
+                </div>
+
+                <div class="programs-grid">
+                    <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="program-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Computer Science</h3>
+                        <p>Bachelor of Science in Computer Science with specializations in AI, Software Engineering, and Cybersecurity.</p>
+                        <ul class="program-features">
+                            <li>4-year degree program</li>
+                            <li>Industry-relevant curriculum</li>
+                            <li>Hands-on projects</li>
+                            <li>Internship opportunities</li>
+                        </ul>
+                        <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+                    </div>
+
+                    <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="program-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Engineering</h3>
+                        <p>Bachelor of Engineering in various disciplines including Electrical, Mechanical, and Civil Engineering.</p>
+                        <ul class="program-features">
+                            <li>4-year degree program</li>
+                            <li>State-of-the-art labs</li>
+                            <li>Industry partnerships</li>
+                            <li>Research opportunities</li>
+                        </ul>
+                        <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+                    </div>
+
+                    <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="program-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Business Administration</h3>
+                        <p>Bachelor of Business Administration with focus on Management, Marketing, and Finance.</p>
+                        <ul class="program-features">
+                            <li>4-year degree program</li>
+                            <li>Case study methodology</li>
+                            <li>Business simulations</li>
+                            <li>Corporate internships</li>
+                        </ul>
+                        <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+                    </div>
+
+                    <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="program-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Arts & Design</h3>
+                        <p>Bachelor of Fine Arts with specializations in Graphic Design, Digital Media, and Visual Arts.</p>
+                        <ul class="program-features">
+                            <li>4-year degree program</li>
+                            <li>Creative studios</li>
+                            <li>Portfolio development</li>
+                            <li>Exhibition opportunities</li>
+                        </ul>
+                        <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">FUUAST</h3>
+                        <p class="footer-description">Federal Urdu University of Arts, Sciences & Technology.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html#about">About FUUAST</a></li>
+                            <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+                            <li><a href="graduate.html">Graduate Programs</a></li>
+                            <li><a href="campus.html">Campuses</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 FUUAST. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+</body>
+</html>

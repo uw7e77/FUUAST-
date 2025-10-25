@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUUAST - Login & Register</title>
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="assets/js/auth.js" defer></script>
+</head>
+<body>
+  
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-home">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back to Home</span>
+    </a>
+
+    <!-- Auth Container -->
+    <div class="auth-container" id="authContainer">
+
+        <!-- Login Form -->
+        <div class="form-container login-container">
+            <div class="form-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>FUUAST</span>
+                </div>
+
+                <h2 class="form-title">Welcome Back!</h2>
+                <p class="form-subtitle">Login to access your account</p>
+
+                <!-- Social Login -->
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                        <span>Sign in with Google</span>
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Sign in with Facebook</span>
+                    </button>
+                </div>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- Login Form -->
+                <form class="auth-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="loginEmail" name="email" placeholder="your.email@example.com" required>
+                            <span class="input-border"></span>
+                        </div>
+                        <span class="error-message">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password" data-target="loginPassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <span class="input-border"></span>
+                        </div>
+                        <span class="error-message">Password must be at least 8 characters</span>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            <span class="checkbox-label">Remember me</span>
+                        </label>
+                        <a href="#forgot" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Login</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" class="switch-form" data-target="register">Create Account</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-container register-container">
+            <div class="form-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>FUUAST</span>
+                </div>
+
+                <h2 class="form-title">Create Account</h2>
+                <p class="form-subtitle">Join FUUAST community today</p>
+
+                <!-- Social Register -->
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                        <span>Sign up with Google</span>
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Sign up with Facebook</span>
+                    </button>
+                </div>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- Register Form -->
+                <form class="auth-form" id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                                <span class="input-border"></span>
+                            </div>
+                            <span class="error-message">First name is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                                <span class="input-border"></span>
+                            </div>
+                            <span class="error-message">Last name is required</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerEmail">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="registerEmail" name="email" placeholder="your.email@example.com" required>
+                            <span class="input-border"></span>
+                        </div>
+                        <span class="error-message">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPhone">Phone Number</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="registerPhone" name="phone" placeholder="03XX-XXXXXXX" required>
+                            <span class="input-border"></span>
+                        </div>
+                        <span class="error-message">Please enter a valid phone number</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="registerPassword" name="password" placeholder="Create a strong password" required>
+                            <button type="button" class="toggle-password" data-target="registerPassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <span class="input-border"></span>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-bar">
+                                <div class="strength-fill" id="strengthFill"></div>
+                            </div>
+                            <span class="strength-text" id="strengthText">Password strength</span>
+                        </div>
+                        <span class="error-message">Password must be at least 8 characters</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+                            <button type="button" class="toggle-password" data-target="confirmPassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <span class="input-border"></span>
+                        </div>
+                        <span class="error-message">Passwords do not match</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-label">I agree to the <a href="#terms" class="link">Terms & Conditions</a> and <a href="#privacy" class="link">Privacy Policy</a></span>
+                        </label>
+                        <span class="error-message">You must agree to terms and conditions</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Create Account</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" class="switch-form" data-target="login">Login Here</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay Panel -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <div class="overlay-content">
+                        <h2>Hello, Friend!</h2>
+                        <p>Enter your personal details and start your journey with FUUAST</p>
+                        <button class="ghost-btn" id="signIn">Sign In</button>
+                    </div>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <div class="overlay-content">
+                        <h2>Welcome Back!</h2>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost-btn" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Success!</h3>
+            <p id="modalMessage">Your account has been created successfully.</p>
+            <button class="modal-btn" onclick="closeModal()">Continue</button>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <p>Please wait...</p>
+    </div>
+
+    <script src="auth.js"></script>
+  
+</body>
+</html>

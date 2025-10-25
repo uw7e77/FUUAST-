@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUUAST Application Form - Apply Now</title>
+    <link rel="stylesheet" href="assets/css/application-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="assets/js/application-form.js" defer></script>
+</head>
+<body>
+  
+    <!-- Progress Background Animation -->
+    <div class="animated-background"></div>
+
+    <!-- Application Container -->
+    <div class="application-container">
+        <!-- Header -->
+        <header class="form-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>FUUAST</span>
+            </div>
+            <h1>University Application Form</h1>
+            <p class="subtitle">Complete your application in simple steps</p>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="step-label">Personal Info</span>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span class="step-label">Academic</span>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <span class="step-label">Program</span>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <span class="step-label">Documents</span>
+                </div>
+                <div class="step" data-step="5">
+                    <div class="step-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <span class="step-label">Review</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multi-Step Form -->
+        <form id="applicationForm" class="multi-step-form">
+
+            <!-- Step 1: Personal Information -->
+            <div class="form-step active" data-step="1">
+                <h2 class="step-title">Personal Information</h2>
+                <p class="step-description">Please provide your basic details</p>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="fullName" name="fullName" placeholder="As per matriculation certificate" required>
+                        </div>
+                        <span class="error-message">Please enter your full name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fatherName">Father's Name <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user-tie"></i>
+                            <input type="text" id="fatherName" name="fatherName" placeholder="As per matriculation certificate" required>
+                        </div>
+                        <span class="error-message">Please enter your father's name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnic">CNIC / B-Form Number <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-id-card"></i>
+                            <input type="text" id="cnic" name="cnic" placeholder="XXXXX-XXXXXXX-X" maxlength="15" required>
+                        </div>
+                        <span class="error-message">Please enter valid CNIC number</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-calendar"></i>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <span class="error-message">Please select your date of birth</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-venus-mars"></i>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <span class="error-message">Please select your gender</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maritalStatus">Marital Status <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-ring"></i>
+                            <select id="maritalStatus" name="maritalStatus" required>
+                                <option value="">Select Status</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                            </select>
+                        </div>
+                        <span class="error-message">Please select marital status</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <span class="error-message">Please enter valid email address</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required>
+                        </div>
+                        <span class="error-message">Please enter valid phone number</span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="permanentAddress">Permanent Address <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-home"></i>
+                            <textarea id="permanentAddress" name="permanentAddress" rows="3" placeholder="Enter your complete address" required></textarea>
+                        </div>
+                        <span class="error-message">Please enter your address</span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="sameAddress" name="sameAddress">
+                            <span class="checkmark"></span>
+                            Mailing address same as permanent address
+                        </label>
+                    </div>
+
+                    <div class="form-group full-width" id="mailingAddressGroup" style="display: none;">
+                        <label for="mailingAddress">Mailing Address</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope-open"></i>
+                            <textarea id="mailingAddress" name="mailingAddress" rows="3" placeholder="Enter your mailing address"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Academic Information -->
+            <div class="form-step" data-step="2">
+                <h2 class="step-title">Academic Information</h2>
+                <p class="step-description">Provide your educational background details</p>
+
+                <div class="education-section">
+                    <h3><i class="fas fa-school"></i> Matriculation / SSC / O-Level</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="matricBoard">Board/University <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-university"></i>
+                                <input type="text" id="matricBoard" name="matricBoard" placeholder="e.g., Federal Board" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="matricYear">Passing Year <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-calendar-check"></i>
+                                <input type="number" id="matricYear" name="matricYear" placeholder="e.g., 2020" min="1990" max="2025" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="matricRollNo">Roll Number <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-hashtag"></i>
+                                <input type="text" id="matricRollNo" name="matricRollNo" placeholder="Your roll number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="matricTotal">Total Marks <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-sort-numeric-up"></i>
+                                <input type="number" id="matricTotal" name="matricTotal" placeholder="e.g., 1100" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="matricObtained">Obtained Marks <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-trophy"></i>
+                                <input type="number" id="matricObtained" name="matricObtained" placeholder="e.g., 950" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="matricPercentage">Percentage <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-percent"></i>
+                                <input type="text" id="matricPercentage" name="matricPercentage" readonly placeholder="Auto-calculated">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Intermediate / FSC / A-Level</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="interBoard">Board/University <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-university"></i>
+                                <input type="text" id="interBoard" name="interBoard" placeholder="e.g., Federal Board" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interYear">Passing Year <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-calendar-check"></i>
+                                <input type="number" id="interYear" name="interYear" placeholder="e.g., 2023" min="1990" max="2025" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interRollNo">Roll Number <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-hashtag"></i>
+                                <input type="text" id="interRollNo" name="interRollNo" placeholder="Your roll number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interTotal">Total Marks <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-sort-numeric-up"></i>
+                                <input type="number" id="interTotal" name="interTotal" placeholder="e.g., 1100" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interObtained">Obtained Marks <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-trophy"></i>
+                                <input type="number" id="interObtained" name="interObtained" placeholder="e.g., 900" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interPercentage">Percentage <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-percent"></i>
+                                <input type="text" id="interPercentage" name="interPercentage" readonly placeholder="Auto-calculated">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Program Selection -->
+            <div class="form-step" data-step="3">
+                <h2 class="step-title">Program Selection</h2>
+                <p class="step-description">Choose your desired programs and campus</p>
+
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="campus">Preferred Campus <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-building"></i>
+                            <select id="campus" name="campus" required>
+                                <option value="">Select Campus</option>
+                                <option value="islamabad">Islamabad Campus</option>
+                                <option value="karachi">Karachi Campus</option>
+                                <option value="gulshan">Gulshan Campus</option>
+                                <option value="abdul-haq">Abdul Haq Campus</option>
+                            </select>
+                        </div>
+                        <span class="error-message">Please select a campus</span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="faculty">Faculty <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-book-reader"></i>
+                            <select id="faculty" name="faculty" required>
+                                <option value="">Select Faculty</option>
+                                <option value="cs">Faculty of Computer Science & IT</option>
+                                <option value="engineering">Faculty of Engineering</option>
+                                <option value="business">Faculty of Business Administration</option>
+                                <option value="sciences">Faculty of Sciences</option>
+                                <option value="social-sciences">Faculty of Social Sciences</option>
+                                <option value="languages">Faculty of Languages & Literature</option>
+                                <option value="pharmacy">Faculty of Pharmacy</option>
+                            </select>
+                        </div>
+                        <span class="error-message">Please select a faculty</span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="program1">1st Choice Program <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-star"></i>
+                            <select id="program1" name="program1" required>
+                                <option value="">Select Program</option>
+                                <option value="bs-cs">BS Computer Science</option>
+                                <option value="bs-se">BS Software Engineering</option>
+                                <option value="bs-it">BS Information Technology</option>
+                                <option value="bba">BBA (Bachelor of Business Administration)</option>
+                                <option value="bs-ee">BS Electrical Engineering</option>
+                                <option value="bs-ce">BS Civil Engineering</option>
+                                <option value="bs-chemistry">BS Chemistry</option>
+                                <option value="bs-physics">BS Physics</option>
+                                <option value="bs-maths">BS Mathematics</option>
+                            </select>
+                        </div>
+                        <span class="error-message">Please select your first choice program</span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="program2">2nd Choice Program</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-star-half-alt"></i>
+                            <select id="program2" name="program2">
+                                <option value="">Select Program</option>
+                                <option value="bs-cs">BS Computer Science</option>
+                                <option value="bs-se">BS Software Engineering</option>
+                                <option value="bs-it">BS Information Technology</option>
+                                <option value="bba">BBA (Bachelor of Business Administration)</option>
+                                <option value="bs-ee">BS Electrical Engineering</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="program3">3rd Choice Program</label>
+                        <div class="input-wrapper">
+                            <i class="far fa-star"></i>
+                            <select id="program3" name="program3">
+                                <option value="">Select Program</option>
+                                <option value="bs-cs">BS Computer Science</option>
+                                <option value="bs-se">BS Software Engineering</option>
+                                <option value="bs-it">BS Information Technology</option>
+                                <option value="bba">BBA (Bachelor of Business Administration)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="admissionType">Admission Category <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="admissionType" value="regular" required>
+                                <span class="radio-custom"></span>
+                                <span>Regular (Open Merit)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="admissionType" value="self-finance">
+                                <span class="radio-custom"></span>
+                                <span>Self Finance</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="admissionType" value="overseas">
+                                <span class="radio-custom"></span>
+                                <span>Overseas Pakistani</span>
+                            </label>
+                        </div>
+                        <span class="error-message">Please select admission category</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Document Upload -->
+            <div class="form-step" data-step="4">
+                <h2 class="step-title">Upload Documents</h2>
+                <p class="step-description">Please upload all required documents (PDF/JPG format, Max 2MB each)</p>
+
+                <div class="upload-grid">
+                    <div class="upload-card">
+                        <div class="upload-icon">
+                            <i class="fas fa-file-image"></i>
+                        </div>
+                        <h4>Recent Photograph</h4>
+                        <p class="upload-desc">Passport size photo with white background</p>
+                        <input type="file" id="photo" name="photo" accept="image/*" required hidden>
+                        <label for="photo" class="upload-btn">
+                            <i class="fas fa-cloud-upload-alt"></i> Choose File
+                        </label>
+                        <span class="file-name">No file chosen</span>
+                        <span class="error-message">Please upload your photograph</span>
+                    </div>
+
+                    <div class="upload-card">
+                        <div class="upload-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h4>CNIC / B-Form</h4>
+                        <p class="upload-desc">Clear copy of both sides</p>
+                        <input type="file" id="cnicFile" name="cnicFile" accept=".pdf,.jpg,.jpeg,.png" required hidden>
+                        <label for="cnicFile" class="upload-btn">
+                            <i class="fas fa-cloud-upload-alt"></i> Choose File
+                        </label>
+                        <span class="file-name">No file chosen</span>
+                        <span class="error-message">Please upload CNIC copy</span>
+                    </div>
+
+                    <div class="upload-card">
+                        <div class="upload-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Matric Certificate & DMC</h4>
+                        <p class="upload-desc">Attested copy of certificate and detailed marks</p>
+                        <input type="file" id="matricDoc" name="matricDoc" accept=".pdf,.jpg,.jpeg,.png" required hidden>
+                        <label for="matricDoc" class="upload-btn">
+                            <i class="fas fa-cloud-upload-alt"></i> Choose File
+                        </label>
+                        <span class="file-name">No file chosen</span>
+                        <span class="error-message">Please upload matric documents</span>
+                    </div>
+
+                    <div class="upload-card">
+                        <div class="upload-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Intermediate Certificate & DMC</h4>
+                        <p class="upload-desc">Attested copy of certificate and detailed marks</p>
+                        <input type="file" id="interDoc" name="interDoc" accept=".pdf,.jpg,.jpeg,.png" required hidden>
+                        <label for="interDoc" class="upload-btn">
+                            <i class="fas fa-cloud-upload-alt"></i> Choose File
+                        </label>
+                        <span class="file-name">No file chosen</span>
+                        <span class="error-message">Please upload intermediate documents</span>
+                    </div>
+
+                    <div class="upload-card">
+                        <div class="upload-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Domicile Certificate</h4>
+                        <p class="upload-desc">Attested copy of domicile</p>
+                        <input type="file" id="domicile" name="domicile" accept=".pdf,.jpg,.jpeg,.png" hidden>
+                        <label for="domicile" class="upload-btn">
+                            <i class="fas fa-cloud-upload-alt"></i> Choose File
+                        </label>
+                        <span class="file-name">No file chosen</span>
+                    </div>
+
+                    <div class="upload-card">
+                        <div class="upload-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h4>Additional Documents</h4>
+                        <p class="upload-desc">Any other relevant certificates</p>
+                        <input type="file" id="additional" name="additional" accept=".pdf,.jpg,.jpeg,.png" hidden>
+                        <label for="additional" class="upload-btn">
+                            <i class="fas fa-cloud-upload-alt"></i> Choose File
+                        </label>
+                        <span class="file-name">No file chosen</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Review & Submit -->
+            <div class="form-step" data-step="5">
+                <h2 class="step-title">Review Your Application</h2>
+                <p class="step-description">Please review all information before submitting</p>
+
+                <div class="review-section">
+                    <h3><i class="fas fa-user-circle"></i> Personal Information</h3>
+                    <div class="review-grid">
+                        <div class="review-item">
+                            <span class="review-label">Full Name:</span>
+                            <span class="review-value" id="review-fullName">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">Father's Name:</span>
+                            <span class="review-value" id="review-fatherName">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">CNIC:</span>
+                            <span class="review-value" id="review-cnic">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">Email:</span>
+                            <span class="review-value" id="review-email">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-section">
+                    <h3><i class="fas fa-book-open"></i> Academic Information</h3>
+                    <div class="review-grid">
+                        <div class="review-item">
+                            <span class="review-label">Matric Board:</span>
+                            <span class="review-value" id="review-matricBoard">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">Matric Percentage:</span>
+                            <span class="review-value" id="review-matricPercentage">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">Inter Board:</span>
+                            <span class="review-value" id="review-interBoard">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">Inter Percentage:</span>
+                            <span class="review-value" id="review-interPercentage">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Program Selection</h3>
+                    <div class="review-grid">
+                        <div class="review-item">
+                            <span class="review-label">Campus:</span>
+                            <span class="review-value" id="review-campus">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">Faculty:</span>
+                            <span class="review-value" id="review-faculty">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">First Choice:</span>
+                            <span class="review-value" id="review-program1">-</span>
+                        </div>
+                        <div class="review-item">
+                            <span class="review-label">Admission Type:</span>
+                            <span class="review-value" id="review-admissionType">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="declaration-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Declaration</h3>
+                    <div class="declaration-content">
+                        <label class="checkbox-label large">
+                            <input type="checkbox" id="declaration" name="declaration" required>
+                            <span class="checkmark"></span>
+                            <span class="declaration-text">
+                                I hereby declare that all the information provided in this application form is true and correct to the best of my knowledge. 
+                                I understand that any false information may result in the cancellation of my admission. I have read and agree to abide by 
+                                the rules and regulations of FUUAST.
+                            </span>
+                        </label>
+                    </div>
+                    <span class="error-message">Please accept the declaration to proceed</span>
+                </div>
+            </div>
+
+            <!-- Form Navigation Buttons -->
+            <div class="form-navigation">
+                <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button type="button" class="btn btn-primary" id="nextBtn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+                <button type="submit" class="btn btn-apply" id="submitBtn" style="display: none;">
+                    <i class="fas fa-paper-plane"></i> Apply Now
+                </button>
+            </div>
+        </form>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage" style="display: none;">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Application Submitted Successfully!</h2>
+            <p>Your application reference number is: <strong id="referenceNumber">FUUAST-2025-XXXX</strong></p>
+            <p>You will receive a confirmation email shortly with further instructions.</p>
+            <div class="success-actions">
+                <button class="btn btn-primary" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print Application
+                </button>
+                <a href="index.html" class="btn btn-secondary">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+  
+</body>
+</html>

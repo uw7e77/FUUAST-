@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUUAST - Federal Urdu University of Arts, Sciences & Technology</title>
+     <link rel="stylesheet" href="assets/css/styles.css">
+     <link rel="stylesheet" href="assets/css/chatbot.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <script src="assets/js/chatbot.js" defer></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+     <header class="header" id="header">
+         <!-- Secondary Navigation -->
+    <div class="subnav" aria-label="Secondary navigation">
+        <div class="container">
+            <ul class="subnav-menu">
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Journals</a></li>
+                <li><a href="#">SCHOLARSHIP</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Placement Bureau</a></li>
+                 
+                <li class="subnav-search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search here..." class="search-input" aria-label="Search">
+                        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="auth.html" class="login-btn">Log in ↗</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>FUUAST</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </label>
+
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="undergraduate.html">PROGRAMS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="undergraduate.html">Undergraduate</a></li>
+                                <li><a href="graduate.html">Graduate</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#">ADMISSION <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="application-form.html">Apply Now</a></li>
+                                <li><a href="MeritLists.aspx">Merit Lists</a></li>
+                            </ul>
+                        </li>
+                  
+                        
+                        
+                        <!-- Faculties Dropdown -->
+                        <li class="dropdown">
+                            <a href="#">FACULTIES <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Arts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="English.html">Department of English</a></li>
+                                        <li><a class="dropdown-item" href="InternationalRelations.aspx">Department of International Relations</a></li>
+                                        <li><a class="dropdown-item" href="MassCommunication.aspx">Department of Mass Communication</a></li>
+                                        <li><a class="dropdown-item" href="Urdu.aspx">Department of Urdu</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Business Administration, Commerce &amp; Economics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="BusinessAdministration.aspx">Department of Business Administration</a></li>
+                                        <li><a class="dropdown-item" href="CommerceMain.aspx">Department of Commerce</a></li>
+                                        <li><a class="dropdown-item" href="EconomicsMain.aspx">Department of Economics</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Engineering <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="EE.aspx">Department of Electrical Engineering</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Ma'arif-e-Islamia <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="Islamiat.aspx">Department of Islamic Studies</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Science &amp; Technology <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="AppliedPhysics.aspx">Department of Physics</a></li>
+                                        <li><a class="dropdown-item" href="ComputerScience.aspx">Department of Computer Science</a></li>
+                                        <li><a class="dropdown-item" href="Mathematics.aspx">Department of Mathematics</a></li>
+                                        <li><a class="dropdown-item" href="SofwareEngineering.aspx">Department of Sofware Engineering</a></li>
+                                        <li><a class="dropdown-item" href="Statistics.aspx">Department of Statistics</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">STUDENTS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.digitallibrary.edu.pk/fuuast.html" target="_blank" rel="noopener noreferrer">Digital Library</a></li>
+                                <li class="has-submenu">
+                                    <a href="#">Examination <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="Examination.html">Examination</a></li>
+                                        <li><a href="DegreeClearance.aspx">Degree Clearance</a></li>
+                                        <li><a href="Results.aspx">Results</a></li>
+                                        <li><a href="StatusReports.aspx">Status Reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="LaptopScheme.aspx">Laptop Scheme</a></li>
+                                <li><a href="Oric.aspx">ORIC</a></li>
+                                <li><a href="StudentCard.aspx">University Card</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+
+                         
+                         
+                         <!-- Administration Dropdown -->
+                         <li class="dropdown">
+                            <a href="#">ADMINISTRATION <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Accounts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="FeeDetails.aspx">Fee Section</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">Academics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="AdMissionMain.aspx">Admission Department</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">IT Department <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">IT Cell</a></li>
+                                        <li><a href="#">MIS Cell</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="#">Planning & Development</a></li>
+                                <li><a href="https://fuuastisb.edu.pk/QEC.aspx">QEC</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Store & Purchase</a></li>
+                                <li><a href="Forms/BusesRoutes_Fall2025.pdf">Transport Section</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="index.html#about">ABOUT <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about">About FUUAST</a></li>
+                                <li><a href="index.html#vision">Vision & Mission</a></li>
+                                <li><a href="index.html#leadership">Leadership</a></li>
+                                <li><a href="index.html#history">History</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                  
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section with Parallax -->
+        <section class="hero parallax-section" id="home">
+            <div class="hero-slider">
+                <!-- Slide 1 -->
+                <div class="slide active" style="background-image: url('Images/banner-1_N.jpeg');">
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="slide-content">
+                            <h1 class="hero-title">Welcome to FUUAST</h1>
+                            <p class="hero-subtitle">Federal Urdu University of Arts, Sciences & Technology</p>
+                            <p class="hero-tagline">Committed to Excellence, Research, and Student Success</p>
+                            <div class="hero-buttons">
+                                <a href="undergraduate.html" class="btn btn-white btn-lg">Explore Programs</a>
+                                <a href="application-form.html" class="btn btn-outline-white btn-lg">Apply Today</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('Images/EventMain.jpeg');">
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="slide-content">
+                            <h1 class="hero-title">Discover Our Research</h1>
+                            <p class="hero-subtitle">Innovation, publications, and community impact</p>
+                            <div class="hero-buttons">
+                                <a href="#" class="btn btn-white btn-lg">Research & Publication</a>
+                                <a href="#" class="btn btn-outline-white btn-lg">Explore Labs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: url('Images/VC.jpeg');">
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="slide-content">
+                            <h1 class="hero-title">Join Our Community</h1>
+                            <p class="hero-subtitle">Admissions open — Undergraduate & Graduate</p>
+                            <div class="hero-buttons">
+                                <a href="application-form.html" class="btn btn-white btn-lg">Apply Now</a>
+                                <a href="graduate.html" class="btn btn-outline-white btn-lg">Graduate Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 (sliderimg/OIP.webp) -->
+                <div class="slide" style="background-image: url('sliderimg/OIP.webp');">
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="slide-content">
+                            <h1 class="hero-title">Experience Our Campus</h1>
+                            <p class="hero-subtitle">Vibrant student life and state-of-the-art facilities</p>
+                            <div class="hero-buttons">
+                                <a href="campus.html" class="btn btn-white btn-lg">Visit Campus</a>
+                                <a href="undergraduate.html" class="btn btn-outline-white btn-lg">Explore Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-arrow prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-arrow next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots" aria-label="Slide navigation"></div>
+            </div>
+
+            <a href="#stats" class="hero-scroll" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Stats Section with Counter Animation -->
+        <section class="stats-section" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-user-graduate"></i>
+                        <div class="stat-number counter" data-target="15000">0</div>
+                        <p class="stat-label">Active Students</p>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div class="stat-number counter" data-target="500">0</div>
+                        <p class="stat-label">Expert Faculty</p>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-book-open"></i>
+                        <div class="stat-number counter" data-target="150">0</div>
+                        <p class="stat-label">Academic Programs</p>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-trophy"></i>
+                        <div class="stat-number counter" data-target="50">0</div>
+                        <p class="stat-label">Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section-padding bg-light" id="about">
+            <div class="container">
+                <div class="why-wrapper">
+                    <h2 class="section-title">Why FUUAST?</h2>
+                    <p class="lead">FUUAST blends accessible education in Urdu with globally competitive standards, a research-driven culture, and an inclusive community led by experienced faculty.</p>
+
+                    <div class="quotes-rotator" aria-live="polite">
+                        <figure class="quote-item active">
+                            <blockquote>“Quality education in our national language with international ambition.”</blockquote>
+                            <figcaption>— Vice Chancellor</figcaption>
+                        </figure>
+                        <figure class="quote-item">
+                            <blockquote>“A welcoming campus that nurtures curiosity, confidence, and character.”</blockquote>
+                            <figcaption>— Alumni</figcaption>
+                        </figure>
+                        <figure class="quote-item">
+                            <blockquote>“Research and community impact go hand in hand at FUUAST.”</blockquote>
+                            <figcaption>— Faculty Member</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="why-cta">
+                        <a href="undergraduate.html" class="btn btn-secondary">Explore Programs</a>
+                        <a href="campus.html" class="btn btn-outline">Visit Campus</a>
+                        <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section removed per request: moved to separate pages -->
+        <!-- Campus Section with Glassmorphism -->
+        <section class="section-padding bg-light" id="campus">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title" data-aos="fade-up">Our Campuses</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">FUUAST operates multiple campuses across Pakistan, each offering world-class facilities and vibrant student life.</p>
+                </div>
+
+                <div class="campus-grid">
+                    <div class="campus-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="campus-image">
+                            <img src="Images/VC.jpeg" alt="Islamabad Campus">
+                            <div class="campus-overlay">
+                                <h3>Islamabad Campus</h3>
+                                <p>Principal Seat - Modern Infrastructure</p>
+                                <a href="#contact" class="btn btn-white">Visit Campus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="campus-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="campus-image">
+                            <img src="Images/EventMain.jpeg" alt="Karachi Campus">
+                            <div class="campus-overlay">
+                                <h3>Karachi Campus</h3>
+                                <p>Largest Campus - Business Hub</p>
+                                <a href="#contact" class="btn btn-white">Visit Campus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="campus-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="campus-image">
+                            <img src="Images/banner-1_N.jpeg" alt="Gulshan Campus">
+                            <div class="campus-overlay">
+                                <h3>Gulshan Campus</h3>
+                                <p>Technology & Engineering</p>
+                                <a href="#contact" class="btn btn-white">Visit Campus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Events with Hover Effects -->
+        <section class="section-padding" id="news">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title" data-aos="fade-right">Latest News & Events</h2>
+                        <p class="section-description" data-aos="fade-right" data-aos-delay="100">Stay updated with the latest happenings at FUUAST.</p>
+                    </div>
+                    <a href="#all-news" class="btn btn-outline" data-aos="fade-left">View All News</a>
+                </div>
+
+                <div class="news-grid">
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="news-image">
+                            <img src="Images/EventMain.jpeg" alt="FUUAST News">
+                            <span class="news-category">Partnership</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="far fa-calendar"></i> March 3, 2025</span>
+                                <span><i class="far fa-user"></i> Admin</span>
+                            </div>
+                            <h3 class="news-title">China Partnership: 1,000 Students to Train in Yangling</h3>
+                            <p class="news-excerpt">FUUAST welcomes Northwest A&F University delegation, establishing groundbreaking collaboration for Pakistani students and researchers in biotechnology and food security.</p>
+                            <a href="#news-detail" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="news-image">
+                            <img src="Images/EventMain.jpeg" alt="Orientation Session">
+                            <span class="news-category">Academic</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="far fa-calendar"></i> March 3, 2025</span>
+                                <span><i class="far fa-user"></i> Admin</span>
+                            </div>
+                            <h3 class="news-title">Spring 2025 Orientation Session</h3>
+                            <p class="news-excerpt">Vice-Chancellor Dr. Zabta Khan Shinwari welcomed newly admitted students, emphasizing the importance of dedication and positive activities for national development.</p>
+                            <a href="#news-detail" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="news-image">
+                            <img src="Images/EventMain.jpeg" alt="Health Initiative">
+                            <span class="news-category">Health</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="far fa-calendar"></i> February 15, 2025</span>
+                                <span><i class="far fa-user"></i> Admin</span>
+                            </div>
+                            <h3 class="news-title">Qurshi Natural Clinic Establishment</h3>
+                            <p class="news-excerpt">Historic agreement signed between VC Dr. Zabita Khan Shinwari and Qurshi Foundation to establish natural clinic at FUUAST Islamabad campus.</p>
+                            <a href="#news-detail" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section with Gradient Animation -->
+        <section class="cta-section section-padding text-center animated-gradient">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-aos="zoom-in">Ready to Start Your Journey?</h2>
+                    <p class="cta-description" data-aos="zoom-in" data-aos-delay="100">Join thousands of students at FUUAST and shape your future with quality education and research opportunities.</p>
+                    <div class="cta-buttons" data-aos="zoom-in" data-aos-delay="200">
+                        <a href="#apply" class="btn btn-white btn-lg pulse-animation">Apply for Admission</a>
+                        <a href="#contact" class="btn btn-outline-white btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="section-padding bg-light" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-description">Get in touch with FUUAST for admissions, programs, and general inquiries.</p>
+                </div>
+                <div class="contact-content">
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Constitution Avenue, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone"></i> +92-51-9262381-5</li>
+                        <li><i class="fas fa-envelope"></i> info@fuuast.edu.pk</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">FUUAST</h3>
+                        <p class="footer-description">Federal Urdu University of Arts, Sciences & Technology - The first university in Pakistan using Urdu as the main language of instruction.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">About FUUAST</a></li>
+                            <li><a href="#programs">Academic Programs</a></li>
+                            <li><a href="#admissions">Admissions</a></li>
+                            <li><a href="#research">Research</a></li>
+                            <li><a href="#campus">Campus Life</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#library">Library</a></li>
+                            <li><a href="StudentPortal/student-portal.html">Student Portal</a></li>
+                            <li><a href="#lms">Learning Management System</a></li>
+                            <li><a href="#scholarships">Scholarships</a></li>
+                            <li><a href="#events">Events Calendar</a></li>
+                            <li><a href="#downloads">Downloads</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Contact Us</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Constitution Avenue, Islamabad, Pakistan</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+92-51-9262381-5</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>info@fuuast.edu.pk</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 FUUAST. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#sitemap">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

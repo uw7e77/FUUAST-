@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting to Auth</title>
+  <meta http-equiv="refresh" content="0; url=../auth.html" />
+  <link rel="canonical" href="../auth.html" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; padding: 2rem; }
+    .box { max-width: 600px; margin: 4rem auto; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; }
+    a { color: #0066cc; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Redirecting…</h1>
+    <p>You are being redirected to the authentication page.</p>
+    <p>If you are not redirected automatically, <a href="../auth.html">click here</a>.</p>
+  </div>
+  <script>
+    // Fallback JS redirect in case meta refresh is blocked
+    window.location.replace("../auth.html");
+  </script>
+</body>
+</html>

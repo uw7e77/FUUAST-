@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUUAST Student Portal - Dashboard</title>
+    <link rel="stylesheet" href="student-portal.css">
+    <link rel="stylesheet" href="student-portal_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>FUUAST Portal</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="user-profile">
+            <div class="user-avatar">
+                <img src="https://ui-avatars.com/api/?name=Ubaid+Jamil&background=0066cc&color=fff&size=80" alt="User Avatar">
+                <span class="status-indicator"></span>
+            </div>
+            <div class="user-info">
+                <h3>Ubaid Jamil</h3>
+                <p>BS Computer Science</p>
+                <span class="student-id">ID: FUUAST-2023-1234</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active">
+                    <a href="#dashboard">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#courses">
+                        <i class="fas fa-book-open"></i>
+                        <span>My Courses</span>
+                        <span class="badge">5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#grades">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Grades & Results</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#assignments">
+                        <i class="fas fa-tasks"></i>
+                        <span>Assignments</span>
+                        <span class="badge warning">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#attendance">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Attendance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#schedule">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Class Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#fees">
+                        <i class="fas fa-wallet"></i>
+                        <span>Fee Payment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#library">
+                        <i class="fas fa-book"></i>
+                        <span>Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#messages">
+                        <i class="fas fa-envelope"></i>
+                        <span>Messages</span>
+                        <span class="badge">7</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile">
+                        <i class="fas fa-user-circle"></i>
+                        <span>My Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#settings">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sidebar-interactive.html">
+                        <i class="fas fa-bars"></i>
+                        <span>Interactive Sidebar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="../index.html" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Top Header -->
+        <header class="top-header">
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="header-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search courses, assignments, grades...">
+            </div>
+
+            <div class="header-actions">
+                <button class="notification-btn" id="notificationBtn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">5</span>
+                </button>
+
+                <div class="notification-dropdown" id="notificationDropdown">
+                    <div class="notification-header">
+                        <h4>Notifications</h4>
+                        <a href="#mark-all">Mark all as read</a>
+                    </div>
+                    <div class="notification-list">
+                        <div class="notification-item unread">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div class="notification-content">
+                                <p><strong>Assignment Due</strong></p>
+                                <p>Data Structures assignment due tomorrow</p>
+                                <span class="notification-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item unread">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="notification-content">
+                                <p><strong>Grade Posted</strong></p>
+                                <p>Your Web Development midterm result is available</p>
+                                <span class="notification-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <i class="fas fa-calendar"></i>
+                            <div class="notification-content">
+                                <p><strong>Class Scheduled</strong></p>
+                                <p>Database Systems lecture tomorrow at 9:00 AM</p>
+                                <span class="notification-time">1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#all-notifications" class="view-all-btn">View All Notifications</a>
+                </div>
+
+                <div class="user-menu-btn" id="userMenuBtn">
+                    <img src="https://ui-avatars.com/api/?name=Ubaid+Jamil&background=0066cc&color=fff&size=40" alt="User">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-dropdown-header">
+                        <img src="https://ui-avatars.com/api/?name=Ubaid+Jamil&background=0066cc&color=fff&size=60" alt="User">
+                        <div>
+                            <h4>Ubaid Jamil</h4>
+                            <p>ubaidjamil@fuuast.edu.pk</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#profile"><i class="fas fa-user"></i> My Profile</a></li>
+                        <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+                        <li><a href="#help"><i class="fas fa-question-circle"></i> Help & Support</a></li>
+                        <li><a href="../index.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <main class="dashboard-content">
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <div class="welcome-content">
+                    <h1>Welcome back, Ubaid! 👋</h1>
+                    <p>Here's what's happening with your studies today</p>
+                </div>
+                <div class="semester-info">
+                    <span class="semester-badge">Spring 2025</span>
+                    <span class="cgpa-display">CGPA: 3.75</span>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>5</h3>
+                        <p>Enrolled Courses</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Completed Tasks</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>3</h3>
+                        <p>Pending Tasks</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>92%</h3>
+                        <p>Attendance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Upcoming Classes -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-calendar-alt"></i> Today's Schedule</h3>
+                        <a href="#schedule" class="view-all">View All</a>
+                    </div>
+                    <div class="card-content">
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <span class="time">9:00 AM</span>
+                                <span class="duration">1.5 hrs</span>
+                            </div>
+                            <div class="schedule-details">
+                                <h4>Database Systems</h4>
+                                <p><i class="fas fa-user"></i> Dr. Sarah Ahmed</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Room 305, CS Building</p>
+                            </div>
+                            <div class="schedule-status ongoing">
+                                <i class="fas fa-circle"></i> Ongoing
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <span class="time">11:00 AM</span>
+                                <span class="duration">1 hr</span>
+                            </div>
+                            <div class="schedule-details">
+                                <h4>Data Structures</h4>
+                                <p><i class="fas fa-user"></i> Prof. Muhammad Ali</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Lab 201, CS Building</p>
+                            </div>
+                            <div class="schedule-status upcoming">
+                                <i class="fas fa-clock"></i> Upcoming
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <span class="time">2:00 PM</span>
+                                <span class="duration">1.5 hrs</span>
+                            </div>
+                            <div class="schedule-details">
+                                <h4>Web Development</h4>
+                                <p><i class="fas fa-user"></i> Mr. Bilal Hassan</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Lab 103, IT Building</p>
+                            </div>
+                            <div class="schedule-status upcoming">
+                                <i class="fas fa-clock"></i> Upcoming
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assignments -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-tasks"></i> Pending Assignments</h3>
+                        <a href="#assignments" class="view-all">View All</a>
+                    </div>
+                    <div class="card-content">
+                        <div class="assignment-item urgent">
+                            <div class="assignment-icon">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div class="assignment-details">
+                                <h4>Data Structures Assignment 3</h4>
+                                <p>Implement Binary Search Tree</p>
+                                <div class="assignment-meta">
+                                    <span class="due-date"><i class="fas fa-clock"></i> Due: Tomorrow</span>
+                                    <span class="priority urgent">Urgent</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="assignment-item">
+                            <div class="assignment-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="assignment-details">
+                                <h4>Database Design Project</h4>
+                                <p>Create ER diagram for library system</p>
+                                <div class="assignment-meta">
+                                    <span class="due-date"><i class="fas fa-clock"></i> Due: 3 days</span>
+                                    <span class="priority medium">Medium</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="assignment-item">
+                            <div class="assignment-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="assignment-details">
+                                <h4>Web Development Project</h4>
+                                <p>Build responsive portfolio website</p>
+                                <div class="assignment-meta">
+                                    <span class="due-date"><i class="fas fa-clock"></i> Due: 1 week</span>
+                                    <span class="priority low">Low</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Progress -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-chart-line"></i> Course Progress</h3>
+                        <a href="#courses" class="view-all">View All</a>
+                    </div>
+                    <div class="card-content">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <div class="course-info">
+                                    <h4>Database Systems</h4>
+                                    <span class="course-code">CS-301</span>
+                                </div>
+                                <span class="progress-percent">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <div class="course-info">
+                                    <h4>Data Structures</h4>
+                                    <span class="course-code">CS-202</span>
+                                </div>
+                                <span class="progress-percent">72%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 72%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <div class="course-info">
+                                    <h4>Web Development</h4>
+                                    <span class="course-code">CS-305</span>
+                                </div>
+                                <span class="progress-percent">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <div class="course-info">
+                                    <h4>Computer Networks</h4>
+                                    <span class="course-code">CS-304</span>
+                                </div>
+                                <span class="progress-percent">68%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 68%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Grades -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-award"></i> Recent Grades</h3>
+                        <a href="#grades" class="view-all">View All</a>
+                    </div>
+                    <div class="card-content">
+                        <div class="grade-item">
+                            <div class="grade-icon grade-a">A</div>
+                            <div class="grade-details">
+                                <h4>Web Development Midterm</h4>
+                                <p>Score: 92/100</p>
+                                <span class="grade-date">Posted 2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="grade-item">
+                            <div class="grade-icon grade-b">B+</div>
+                            <div class="grade-details">
+                                <h4>Database Systems Quiz 3</h4>
+                                <p>Score: 85/100</p>
+                                <span class="grade-date">Posted 1 week ago</span>
+                            </div>
+                        </div>
+
+                        <div class="grade-item">
+                            <div class="grade-icon grade-a">A-</div>
+                            <div class="grade-details">
+                                <h4>Data Structures Assignment 2</h4>
+                                <p>Score: 88/100</p>
+                                <span class="grade-date">Posted 2 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Announcements -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-bullhorn"></i> Announcements</h3>
+                        <a href="#announcements" class="view-all">View All</a>
+                    </div>
+                    <div class="card-content">
+                        <div class="announcement-item">
+                            <div class="announcement-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="announcement-content">
+                                <h4>Semester Registration Open</h4>
+                                <p>Summer 2025 semester registration is now open. Register before May 15th.</p>
+                                <span class="announcement-date">Today</span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-item">
+                            <div class="announcement-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="announcement-content">
+                                <h4>Final Exams Schedule Released</h4>
+                                <p>Spring 2025 final examination schedule has been posted.</p>
+                                <span class="announcement-date">Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-item">
+                            <div class="announcement-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="announcement-content">
+                                <h4>Coding Competition</h4>
+                                <p>Annual FUUAST Coding Competition registration opens next week.</p>
+                                <span class="announcement-date">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="dashboard-card quick-actions-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="quick-actions-grid">
+                            <a href="#pay-fee" class="quick-action-btn">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Pay Fee</span>
+                            </a>
+                            <a href="#register-course" class="quick-action-btn">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Register Course</span>
+                            </a>
+                            <a href="#print-id" class="quick-action-btn">
+                                <i class="fas fa-id-card"></i>
+                                <span>Print ID Card</span>
+                            </a>
+                            <a href="#transcript" class="quick-action-btn">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Transcript</span>
+                            </a>
+                            <a href="#library-books" class="quick-action-btn">
+                                <i class="fas fa-book"></i>
+                                <span>Library Books</span>
+                            </a>
+                            <a href="#support" class="quick-action-btn">
+                                <i class="fas fa-headset"></i>
+                                <span>Support</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="student-portal.js"></script>
+  
+</body>
+</html>

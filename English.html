@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of English - FUUAST</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+     <style>
+      /* English Page Inline Styles */
+      :root {
+        --eng-primary: #2b59ff;
+        --eng-secondary: #6c5ce7;
+        --eng-text: #2a2f3f;
+        --eng-muted: #5b657a;
+        --eng-card: #ffffff;
+        --eng-border: #e6eaf1;
+        --eng-bg: #f7f9fc;
+        --eng-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+      }
+
+      /* Constrain main content area without altering global container */
+      main.container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px 16px;
+        background: linear-gradient(180deg, rgba(247, 249, 252, 0.65), rgba(247, 249, 252, 0));
+      }
+
+      /* Sections */
+      .section {
+        background: var(--eng-card);
+        border: 1px solid var(--eng-border);
+        border-radius: 16px;
+        padding: 28px;
+        margin: 18px 0;
+        box-shadow: var(--eng-shadow);
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      .section-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--eng-primary), var(--eng-secondary));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        box-shadow: 0 6px 20px rgba(43, 89, 255, 0.25);
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        color: #182235;
+      }
+
+      .section-content {
+        color: #334155;
+        line-height: 1.75;
+        font-size: 1.02rem;
+      }
+
+      .section-text {
+        margin-top: 12px;
+      }
+
+      /* Objectives */
+      .objectives-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+      }
+
+      .objective-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        background: #fff;
+        border: 1px solid var(--eng-border);
+        border-radius: 14px;
+        padding: 16px;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+
+      .objective-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
+      }
+
+      .objective-number {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #EEF2FF;
+        color: var(--eng-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+
+      .objective-text {
+        color: var(--eng-text);
+      }
+
+      /* HoD Message */
+      .hod-message {
+        position: relative;
+        background: linear-gradient(180deg, #ffffff, var(--eng-bg));
+        border: 1px solid var(--eng-border);
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        gap: 16px;
+      }
+
+      .quote-icon {
+        font-size: 48px;
+        color: #CAD4F6;
+        line-height: 1;
+      }
+
+      .hod-content {
+        flex: 1;
+        color: #334155;
+      }
+
+      /* Anchor offset for sticky header */
+      [id] {
+        scroll-margin-top: 100px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .section {
+          padding: 18px;
+        }
+        .section-title {
+          font-size: 1.28rem;
+        }
+        .section-icon {
+          width: 36px;
+          height: 36px;
+          font-size: 18px;
+        }
+        .hod-message {
+          flex-direction: column;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+   
+
+     <header class="header" id="header">
+         <!-- Secondary Navigation -->
+    <div class="subnav" aria-label="Secondary navigation">
+        <div class="container">
+            <ul class="subnav-menu">
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Journals</a></li>
+                <li><a href="#">SCHOLARSHIP</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Placement Bureau</a></li>
+                 
+                <li class="subnav-search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search here..." class="search-input" aria-label="Search">
+                        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="auth.html" class="login-btn">Log in ↗</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>FUUAST</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </label>
+
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="undergraduate.html">Programs <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="undergraduate.html">Undergraduate</a></li>
+                                <li><a href="graduate.html">Graduate</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#">Admission <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="application-form.html">Apply Now</a></li>
+                                <li><a href="MeritLists.aspx">Merit Lists</a></li>
+                            </ul>
+                        </li>
+                  
+                        
+                        
+                        <!-- Faculties Dropdown -->
+                        <li class="dropdown">
+                            <a href="#">Faculties <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Arts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="English.html">Department of English</a></li>
+                                        <li><a class="dropdown-item" href="InternationalRelations.aspx">Department of International Relations</a></li>
+                                        <li><a class="dropdown-item" href="MassCommunication.aspx">Department of Mass Communication</a></li>
+                                        <li><a class="dropdown-item" href="Urdu.aspx">Department of Urdu</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Business Administration, Commerce &amp; Economics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="BusinessAdministration.aspx">Department of Business Administration</a></li>
+                                        <li><a class="dropdown-item" href="CommerceMain.aspx">Department of Commerce</a></li>
+                                        <li><a class="dropdown-item" href="EconomicsMain.aspx">Department of Economics</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Engineering <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="EE.aspx">Department of Electrical Engineering</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Ma'arif-e-Islamia <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="Islamiat.aspx">Department of Islamic Studies</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">Science &amp; Technology <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a class="dropdown-item" href="AppliedPhysics.aspx">Department of Physics</a></li>
+                                        <li><a class="dropdown-item" href="ComputerScience.aspx">Department of Computer Science</a></li>
+                                        <li><a class="dropdown-item" href="Mathematics.aspx">Department of Mathematics</a></li>
+                                        <li><a class="dropdown-item" href="SofwareEngineering.aspx">Department of Sofware Engineering</a></li>
+                                        <li><a class="dropdown-item" href="Statistics.aspx">Department of Statistics</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Students <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.digitallibrary.edu.pk/fuuast.html" target="_blank" rel="noopener noreferrer">Digital Library</a></li>
+                                <li class="has-submenu">
+                                    <a href="#">Examination <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="Examination.html">Examination</a></li>
+                                        <li><a href="DegreeClearance.aspx">Degree Clearance</a></li>
+                                        <li><a href="Results.aspx">Results</a></li>
+                                        <li><a href="StatusReports.aspx">Status Reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="LaptopScheme.aspx">Laptop Scheme</a></li>
+                                <li><a href="Oric.aspx">ORIC</a></li>
+                                <li><a href="StudentCard.aspx">University Card</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+
+                         
+                         
+                         <!-- Administration Dropdown -->
+                         <li class="dropdown">
+                            <a href="#">Administration <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="has-submenu">
+                                    <a href="#">Accounts <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="FeeDetails.aspx">Fee Section</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">Academics <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="AdMissionMain.aspx">Admission Department</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="has-submenu">
+                                    <a href="#">IT Department <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">IT Cell</a></li>
+                                        <li><a href="#">MIS Cell</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="#">Planning & Development</a></li>
+                                <li><a href="https://fuuastisb.edu.pk/QEC.aspx">QEC</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Store & Purchase</a></li>
+                                <li><a href="Forms/BusesRoutes_Fall2025.pdf">Transport Section</a></li>
+                                <li><a href="Forms.aspx">Download Forms</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="index.html#about">About <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about">About FUUAST</a></li>
+                                <li><a href="index.html#vision">Vision & Mission</a></li>
+                                <li><a href="index.html#leadership">Leadership</a></li>
+                                <li><a href="index.html#history">History</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                  
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introduction Section -->
+        <section id="introduction" class="section">
+            <div class="section-header">
+                <div class="section-icon">📚</div>
+                <h2 class="section-title">Introduction</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-text">
+                    The department of English at Federal Urdu University of Arts, Sciences &amp; Technology (FUUAST) started BS English (Language &amp; Literature) Program in 2022. The syllabus for the program strikes a harmonious balance between Literature and Language. The curriculum gradually proceeds from foundational to advanced courses to build conceptual understanding of students in the core areas of Literature and Linguistics.
+                </p>
+                <p class="section-text" style="margin-top: var(--space-20);">
+                    We have adopted a future oriented comprehensive approach to ensure that our students develop effective reading, writing and presentation skills so that they can thrive in the competitive professional environment. One of the distinguishing features of the Department of English is its focus on the co-curricular activities. The department organizes various literary and co-curricular activities through English Literary Society (ELS). The students get the opportunity to build confidence and express their creativity through these activities.
+                </p>
+                <p class="section-text" style="margin-top: var(--space-20); font-weight: 600; color: var(--color-primary);">
+                    The Department of English at FUUAST is emerging as one of the best departments enrolling 250 plus students within a short span of one year.
+                </p>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section id="vision" class="section">
+            <div class="section-header">
+                <div class="section-icon">🎯</div>
+                <h2 class="section-title">Vision</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-text">
+                    The Department of English at FUUAST offered its first degree program BS English in Fall 2023. Since its inception the Department has attracted a number of students from around the country. The department envisions to develop students' in depth understanding and appreciation for English literature and Linguistics. This department also envisions to foster and support English language proficiency and inculcate the ability to think critically through integrative scheme of studies.
+                </p>
+                <p class="section-text" style="margin-top: var(--space-20);">
+                    The Department envisions to establish itself as a centre of excellence in English literature and linguistics through research orientation. Some of the important components of our department's vision are to inculcate respect for diversity, inclusion, tolerance and peaceful coexistence in our students.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="section">
+            <div class="section-header">
+                <div class="section-icon">🚀</div>
+                <h2 class="section-title">Mission</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-text">
+                    The Department of English at FUUAST envisages to guide its students to enhance their knowledge of English language and literature according to the modern day requirements of their professional life. The four years BS degree program in English, aims to cover the main literary genres in English literature and the key historical periods by focusing on the representative works from different eras.
+                </p>
+                <p class="section-text" style="margin-top: var(--space-20);">
+                    The program also aims to cover the key areas of English linguistics (Phonetics &amp; Phonology, Morphology &amp; Syntax, Semantics, Pragmatics, Sociolinguistics) along with the latest research methods and approaches in the field of linguistics. To develop an understanding of various literary genres and forms of expression (poetry, prose, novels, drama, non-fiction), as well as linguistic and rhetorical skills through frequent reading and writing assignments, class presentations and discussions, the emphasis is placed on the comprehensiveness and depth of the subjects covered.
+                </p>
+                <p class="section-text" style="margin-top: var(--space-20);">
+                    The Linguistic modules aim to provide an understanding of the historical, social, and psychological factors that shape the language used in everyday life, while the Literature modules are designed to foster interpretive skills applying to a wide range of genres and historical periods. We anticipate that this course of study, delivered by our incredibly passionate and skilled faculty members, will develop in students a love for reading, writing and research.
+                </p>
+                <p class="section-text" style="margin-top: var(--space-20);">
+                    To pursue this mission, the department aims at providing students the conducive academic environment where they can learn knowledge and relevant skills to excel in their professional life. The department also wants to focus on the character building and personality development of its students by involving them in different extra curricular activities so that they can become responsible citizens of their country and play a positive role in building a successful nation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Objectives Section -->
+        <section id="objectives" class="section">
+            <div class="section-header">
+                <div class="section-icon">✓</div>
+                <h2 class="section-title">Objectives</h2>
+            </div>
+            <div class="section-content">
+                <ul class="objectives-list">
+                    <li class="objective-item">
+                        <div class="objective-number">1</div>
+                        <p class="objective-text">Enabling students to master the four basic language skills in the context of varied functions of communication and genres.</p>
+                    </li>
+                    <li class="objective-item">
+                        <div class="objective-number">2</div>
+                        <p class="objective-text">Training students to carry out critical analyses of linguistic and literary texts and to place them in their historical, philosophical, cultural, social, and global context.</p>
+                    </li>
+                    <li class="objective-item">
+                        <div class="objective-number">3</div>
+                        <p class="objective-text">Providing students with a solid knowledge and understanding of English prose, poetry, fiction, and drama.</p>
+                    </li>
+                    <li class="objective-item">
+                        <div class="objective-number">4</div>
+                        <p class="objective-text">Helping students acquire a sound understanding of major schools of language and literary criticism.</p>
+                    </li>
+                    <li class="objective-item">
+                        <div class="objective-number">5</div>
+                        <p class="objective-text">Training students in doing academic research in accordance with standard research methodology with emphasis on creativity, and integrity.</p>
+                    </li>
+                    <li class="objective-item">
+                        <div class="objective-number">6</div>
+                        <p class="objective-text">Helping students understand and relate to other cultures.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- HoD Message Section -->
+        <section id="hod-message" class="section">
+            <div class="section-header">
+                <div class="section-icon">💬</div>
+                <h2 class="section-title">Head of Department Message</h2>
+            </div>
+            <div class="section-content">
+                <div class="hod-message">
+                    <div class="quote-icon">"</div>
+                    <div class="hod-content">
+                        <p class="hod-greeting">It is a pleasure to Head the department of English at Federal Urdu University of Arts, Sciences &amp; Technology (FUUAST), Islamabad.</p>
+                        
+                        <p class="hod-text">
+                            The department of English launched its first degree awarding program in Fall 2022 offering a four-year BS in English. Within a very short period, the department of English has established itself into a great height. A team of well qualified, experienced, and motivated teachers is the hallmark of our department. We are fully committed to impart extensive theoretical and well as practical knowledge about English language and literature. We put special efforts in improving the English language proficiency of our students by engaging them in class discussion, presentations and reading-writing tasks.
+                        </p>
+
+                        <p class="hod-text">
+                            My personal mission is to see that every student of FUUAST department of English should have the ability to communicate effectively and use language as a tool for success both personally and professionally.
+                        </p>
+
+                        <p class="hod-text">
+                            I am proud to state that the department of English at FUUAST has pioneered in establishing co-curricular Clubs for students. Through these clubs we have created an exclusive space for students so that they can unleash their talent, explore their creativity, and learn outside the classroom.
+                        </p>
+
+                        <div class="clubs-grid">
+                            <div class="club-card">
+                                <div class="club-icon">🎭</div>
+                                <h4 class="club-name">Dramatics &amp; Debating</h4>
+                                <p class="club-description">Develop public speaking and theatrical skills</p>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-icon">📖</div>
+                                <h4 class="club-name">Reading &amp; Writing</h4>
+                                <p class="club-description">Enhance literary appreciation and creative writing</p>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-icon">🎓</div>
+                                <h4 class="club-name">Seminar Club</h4>
+                                <p class="club-description">Organize academic discussions and presentations</p>
+                            </div>
+                            <div class="club-card">
+                                <div class="club-icon">⚽</div>
+                                <h4 class="club-name">Sports Club</h4>
+                                <p class="club-description">Promote physical fitness and team spirit</p>
+                            </div>
+                        </div>
+
+                        <p class="hod-text" style="margin-top: var(--space-24);">
+                            The department strives to work for the overall growth and personality development of the students to inculcate qualities which are essential for building a just and peaceful society. In order to instill the spirit of volunteerism for community development, the department encourages and supports students to take initiatives for social causes.
+                        </p>
+
+                        <p class="hod-text" style="font-weight: 600;">
+                            Turning our students into academically competent, professionally committed and socially responsible individuals is the prime aim of our department.
+                        </p>
+
+                        <p class="hod-text">
+                            I am confident that the graduates of our department will carve a niche for themselves in the academic and professional field of English language and literature.
+                        </p>
+
+                        <div class="hod-signature">
+                            <p class="hod-name">Head of Department</p>
+                            <p class="hod-title">Department of English, FUUAST Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            &copy; 2025 Department of English - FUUAST. All rights reserved. | 
+            <a href="https://www.fuuastisb.edu.pk/English.aspx" class="footer-link" target="_blank" rel="noopener noreferrer">Official Website</a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all links
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                
+                // Add active class to clicked link
+                this.classList.add('active');
+                
+                // Scroll to section
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const navHeight = document.querySelector('.nav').offsetHeight;
+                    const targetPosition = targetSection.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navHeight = document.querySelector('.nav').offsetHeight;
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - navHeight - 100;
+                const sectionHeight = section.offsetHeight;
+                
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campuses - FUUAST</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/campus.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+     <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>FUUAST</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </label>
+
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="index.html#about">About <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about">About FUUAST</a></li>
+                                <li><a href="index.html#vision">Vision & Mission</a></li>
+                                <li><a href="index.html#leadership">Leadership</a></li>
+                                <li><a href="index.html#history">History</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="undergraduate.html">Programs <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="undergraduate.html">Undergraduate</a></li>
+                                <li><a href="graduate.html">Graduate</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="campus.html">Campus</a></li>
+                        <li><a href="index.html#news">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- Nav Actions -->
+                    <div class="nav-actions">
+                        <a href="#search" class="search-btn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="auth.html" class="btn btn-outline">Login</a>
+                        <a href="auth.html" class="btn btn-secondary">Register</a>
+                        <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <main id="main-content">
+    <section class="section-padding bg-light" id="campus">
+      <div class="container">
+        <div class="section-header text-center">
+          <h1 class="section-title" data-aos="fade-up">Our Campuses</h1>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">FUUAST operates multiple campuses across Pakistan, each offering world-class facilities and vibrant student life.</p>
+        </div>
+        <div class="campus-grid">
+          <div class="campus-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="campus-image">
+              <img src="Images/VC.jpeg" alt="Islamabad Campus">
+              <div class="campus-overlay">
+                <h3>Islamabad Campus</h3>
+                <p>Principal Seat - Modern Infrastructure</p>
+                <a href="#contact" class="btn btn-white">Visit Campus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="campus-image">
+              <img src="Images/EventMain.jpeg" alt="Karachi Campus">
+              <div class="campus-overlay">
+                <h3>Karachi Campus</h3>
+                <p>Largest Campus - Business Hub</p>
+                <a href="#contact" class="btn btn-white">Visit Campus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="campus-image">
+              <img src="Images/banner-1_N.jpeg" alt="Gulshan Campus">
+              <div class="campus-overlay">
+                <h3>Gulshan Campus</h3>
+                <p>Technology & Engineering</p>
+                <a href="#contact" class="btn btn-white">Visit Campus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-title">FUUAST</h3>
+            <p class="footer-description">Federal Urdu University of Arts, Sciences & Technology.</p>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html#about">About FUUAST</a></li>
+              <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+              <li><a href="graduate.html">Graduate Programs</a></li>
+              <li><a href="campus.html">Campuses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 FUUAST. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
