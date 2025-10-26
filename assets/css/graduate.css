@@ -1,15 +1,12 @@
 /* Graduate Programs Page Specific Styles */
 
-/* Graduate Section - Enhanced Modern Design */
+/* Graduate Section */
 #graduate {
-    padding: var(--spacing-3xl) 0;
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 50%, var(--color-secondary) 100%);
-    color: var(--color-white);
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     position: relative;
     overflow: hidden;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
 }
 
 #graduate::before {
@@ -25,22 +22,22 @@
 
 .programs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-3xl);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
     position: relative;
     z-index: 2;
 }
 
 .program-card {
-    background: var(--color-white);
-    backdrop-filter: blur(20px);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-xl) var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px;
     text-align: center;
-    transition: all var(--transition-base);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: var(--shadow-xl);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
 }
@@ -259,6 +256,9 @@
 }
 
 /* Background Utilities */
+.section-padding {
+    padding: 80px 0;
+}
 
 .container {
     max-width: 1200px;

@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUUAST - Federal Urdu University of Arts, Sciences & Technology</title>
      <link rel="stylesheet" href="assets/css/styles.css">
-     <link rel="stylesheet" href="assets/css/chatbot.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-     <script src="assets/js/chatbot.js" defer></script>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <meta name="description" content="Federal Urdu University of Arts, Sciences & Technology (FUUAST) — admissions, programs, research, and campus life across Islamabad and Karachi.">
+     <link rel="icon" href="Images/logo.png" sizes="32x32" type="image/png">
+     <link rel="icon" href="Images/logo.webp" type="image/webp">
+    <style>
+        /* Announcements Ticker (scoped to #announcements) */
+        #announcements { background:#004080; }
+        #announcements .container { padding: 10px 0; }
+        #announcements .ticker { overflow: hidden; color: #fff; padding: 6px 0; }
+        #announcements .ticker__track { display: inline-flex; gap: 2rem; white-space: nowrap; will-change: transform; animation: ticker-scroll 30s linear infinite; }
+        #announcements .ticker__list { display: inline-flex; gap: 2rem; list-style: none; margin: 0; padding: 0; }
+        #announcements .ticker__item { display: inline-block; font-size: 1rem; line-height: 1.6; }
+        #announcements .ticker a { color: #ffd700; text-decoration: underline; }
+        #announcements .ticker a:hover { color: #ffea70; }
+        @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        @media (max-width: 768px) { #announcements .ticker__track { gap: 1rem; } #announcements .ticker__item { font-size: 0.95rem; } }
+    </style>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -50,9 +64,7 @@
                     <!-- Mobile Menu Toggle -->
                     <input type="checkbox" id="menu-toggle" class="menu-toggle">
                     <label for="menu-toggle" class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+                      <i class="fa-solid fa-bars"></i>
                     </label>
 
                     <!-- Navigation Menu -->
@@ -60,7 +72,7 @@
                         <li><a href="index.html" class="active">HOME</a></li>
                         
                         <li class="dropdown">
-                            <a href="undergraduate.html">PROGRAMS <i class="fas fa-chevron-down"></i></a>
+                            <a href="#">PROGRAMS <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="undergraduate.html">Undergraduate</a></li>
                                 <li><a href="graduate.html">Graduate</a></li>
@@ -214,7 +226,7 @@
                     <div class="hero-overlay"></div>
                     <div class="container">
                         <div class="slide-content">
-                            <h1 class="hero-title">Welcome to FUUAST</h1>
+                            <h1 class="hero-title">FUUAST</h1>
                             <p class="hero-subtitle">Federal Urdu University of Arts, Sciences & Technology</p>
                             <p class="hero-tagline">Committed to Excellence, Research, and Student Success</p>
                             <div class="hero-buttons">
@@ -246,7 +258,7 @@
                             <h1 class="hero-title">Join Our Community</h1>
                             <p class="hero-subtitle">Admissions open — Undergraduate & Graduate</p>
                             <div class="hero-buttons">
-                                <a href="application-form.html" class="btn btn-white btn-lg">Apply Now</a>
+                                <a href="application-form.html" class="btn btn-white btn-lg pulse-animation">Apply for Admission</a>
                                 <a href="graduate.html" class="btn btn-outline-white btn-lg">Graduate Programs</a>
                             </div>
                         </div>
@@ -279,6 +291,8 @@
             </a>
         </section>
 
+        <!-- Announcements Headline Bar -->
+        
         <!-- Stats Section with Counter Animation -->
         <section class="stats-section" id="stats">
             <div class="container">
@@ -350,7 +364,7 @@
                 <div class="campus-grid">
                     <div class="campus-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="campus-image">
-                            <img src="Images/VC.jpeg" alt="Islamabad Campus">
+                            <img loading="lazy" decoding="async" src="Images/VC.jpeg" alt="Islamabad Campus">
                             <div class="campus-overlay">
                                 <h3>Islamabad Campus</h3>
                                 <p>Principal Seat - Modern Infrastructure</p>
@@ -461,7 +475,7 @@
             </div>
         </section>
         <!-- Contact Section -->
-        <section class="section-padding bg-light" id="contact">
+        <!-- <section class="section-padding bg-light" id="contact">
             <div class="container">
                 <div class="section-header text-center">
                     <h2 class="section-title">Contact Us</h2>
@@ -469,102 +483,154 @@
                 </div>
                 <div class="contact-content">
                     <ul class="contact-list">
-                        <li><i class="fas fa-map-marker-alt"></i> Constitution Avenue, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Federal Urdu University of Arts, Science & Technology
+Kuri Road Islamabad, 45570, Pakistan</li>
                         <li><i class="fas fa-phone"></i> +92-51-9262381-5</li>
                         <li><i class="fas fa-envelope"></i> info@fuuast.edu.pk</li>
                     </ul>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form" action="mailto:info@fuuast.edu.pk" method="post" enctype="text/plain">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cf-name">Full Name</label>
+                                    <input type="text" id="cf-name" name="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cf-email">Email</label>
+                                    <input type="email" id="cf-email" name="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cf-subject">Subject</label>
+                                <input type="text" id="cf-subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cf-message">Message</label>
+                                <textarea id="cf-message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-column">
-                        <h3 class="footer-title">FUUAST</h3>
-                        <p class="footer-description">Federal Urdu University of Arts, Sciences & Technology - The first university in Pakistan using Urdu as the main language of instruction.</p>
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        </div>
+   <footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">FUUAST</h3>
+                    <p class="footer-description">Federal Urdu University of Arts, Sciences & Technology - The first university in Pakistan using Urdu as the main language of instruction.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
+                </div>
 
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Quick Links</h4>
-                        <ul class="footer-links">
-                            <li><a href="#about">About FUUAST</a></li>
-                            <li><a href="#programs">Academic Programs</a></li>
-                            <li><a href="#admissions">Admissions</a></li>
-                            <li><a href="#research">Research</a></li>
-                            <li><a href="#campus">Campus Life</a></li>
-                            <li><a href="#careers">Careers</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About FUUAST</a></li>
+                        <li><a href="#programs">Academic Programs</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#campus">Campus Life</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Resources</h4>
-                        <ul class="footer-links">
-                            <li><a href="#library">Library</a></li>
-                            <li><a href="StudentPortal/student-portal.html">Student Portal</a></li>
-                            <li><a href="#lms">Learning Management System</a></li>
-                            <li><a href="#scholarships">Scholarships</a></li>
-                            <li><a href="#events">Events Calendar</a></li>
-                            <li><a href="#downloads">Downloads</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#library">Library</a></li>
+                        <li><a href="StudentPortal/student-portal.html">Student Portal</a></li>
+                        <li><a href="#lms">Learning Management System</a></li>
+                        <li><a href="#scholarships">Scholarships</a></li>
+                        <li><a href="#events">Events Calendar</a></li>
+                        <li><a href="#downloads">Downloads</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Contact Us</h4>
-                        <ul class="footer-contact">
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Constitution Avenue, Islamabad, Pakistan</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                <span>+92-51-9262381-5</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span>info@fuuast.edu.pk</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
-                            </li>
-                        </ul>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Federal Urdu University of Arts, Science & Technology
+Kuri Road Islamabad, 45570, Pakistan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+92-51-9262381-5</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@fuuast.edu.pk</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Fri: 8:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Map Column -->
+                <div class="footer-column footer-map">
+                    <h4 class="footer-heading">Find Us</h4>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps?q=33.679506,73.195089&z=14&hl=en&output=embed"
+                            width="100%"
+                            height="250"
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <p class="copyright">&copy; 2025 FUUAST. All rights reserved.</p>
-                    <div class="footer-legal">
-                        <a href="#privacy">Privacy Policy</a>
-                        <a href="#terms">Terms of Service</a>
-                        <a href="#sitemap">Sitemap</a>
-                    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p class="copyright">&copy; 2025 FUUAST. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#sitemap">Sitemap</a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <!-- Back to Top Button -->
     <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        // Initialize AOS animations
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+        }
+    </script>
 </body>
 </html>

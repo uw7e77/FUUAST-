@@ -985,3 +985,25 @@ textarea.error ~ .error-message {
         page-break-after: always;
     }
 }
+
+.application-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
